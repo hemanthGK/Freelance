@@ -1,0 +1,63 @@
+<div class="user-panelcontainer">
+    <!-- User-->
+    <div class="user-panel-row">
+        <!-- <ng-container *ngIf="(userProfileDetails$ | async) as data"> -->
+            <div>
+                <img class="img-holder" src="../../../assets/images/img_avatar.png">
+            </div>
+            <div *ngIf="navExpanded" class="expanded">
+                <div class="text-style">
+                    Hulk
+                </div>
+                <div >
+                    Admin
+                </div>
+            </div>
+        <!-- </ng-container> -->
+        
+        
+    </div>
+    <!-- Dashboard -->
+    <div class="user-panel-row">
+        <div>
+            <img class="img-holder" src="../../../assets/icons/Dashboard.svg">
+        </div>
+        <div *ngIf="navExpanded">
+            Dashboard
+        </div>
+    </div>
+
+    <div class="user-panel-row">
+        <div>
+            <img class="img-holder" src="../../../assets/icons/User_icon.svg">
+        </div>
+        <div *ngIf="navExpanded" class="expanded">
+            
+            <div mat-button [matMenuTriggerFor]="aboveMenu" class="style-menu">
+                Profile
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+            </div>
+                <!-- <mat-menu #aboveMenu="matMenu" yPosition="below">
+                <ng-container *ngFor="let category of categories">
+                    <button mat-menu-item>{{category.name}}</button>
+                </ng-container>
+                
+                </mat-menu> -->
+                
+                <mat-menu #aboveMenu="matMenu" yPosition="below" xPosition="after">
+        
+                    <button mat-menu-item [routerLink]="['user-profile/quotation-history']">
+                        <div class="menu-width">
+                            Quotation History
+                        </div>
+                    </button>
+                    <button mat-menu-item (click)="logout()">
+                        <div class="menu-width">
+                            Logout
+                        </div>
+                    </button>
+                    
+                </mat-menu>
+        </div>
+    </div>
+</div>

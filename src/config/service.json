@@ -1,0 +1,35 @@
+{
+
+    "gatewayUrl" : {
+     
+      "localhost" :"https://dev-altsys-realize-api.azurewebsites.net/"
+    },
+    "gatewayUrlForUserProfile" : {
+        
+        "localhost" : "https://dev-altsys-realize-users-api.azurewebsites.net/"
+    },
+    "gatewayUrlForOrders" : {
+        "localhost" : "https://dev-altsys-realize-order.azurewebsites.net/"
+    },
+    "appUrl" : {
+        "allCategory" : "api/category", 
+        "allOEM" : "api/oem", 
+        "allProducts" : "api/product",
+        "globalSearchByKey" : "api/products/search",
+        "subCategoryByCategory" : "api/sub-category/",
+        "getProductsBySubCategoryIds" : "api/products",
+        "getSingleProduct": "api/product/",
+        "getProductsByBrandIds": "api/products/oems",
+        "getTrendingProducts" : "api/products/trending",
+
+        
+        "userCart" : "api/user-cart",
+        "userSignin" : "api/user/signin",
+
+
+        "app-registration" : "api/user/azure/app-registration",
+        "getConnection" : "api/user/get-connection"
+    }
+    
+}
+

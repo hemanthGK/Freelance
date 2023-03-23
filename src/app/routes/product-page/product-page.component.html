@@ -1,0 +1,52 @@
+<div class="product-page-container">
+    <div class="filter-container">
+        <h6 class="filter-title">Filter</h6>
+        <div *ngIf="subCategories.length > 0" class="container drop-down-container">
+            <ng-multiselect-dropdown
+            [placeholder]="'Categories:'"
+            [settings]="dropdownSettings"
+            [data]="subCategories"
+            [(ngModel)]="selectedItems"
+            (onSelect)="onItemSelect($event)"
+            (onSelectAll)="onSelectAll($event)"
+            (onDeSelect)="onItemDeSelect($event)"
+          >
+          </ng-multiselect-dropdown>
+        </div>
+
+
+        <div *ngIf="brands.length > 0" class="container drop-down-container">
+            <ng-multiselect-dropdown
+            [placeholder]="'Brands:'"
+            [settings]="dropdownSettings"
+            [data]="brands"
+            [(ngModel)]="selectedBrandItems"
+            (onSelect)="onBrandSelect($event)"
+            (onSelectAll)="onBrandSelectAll($event)"
+            (onDeSelect)="onBrandDeSelect($event)"
+            (onDeSelectAll)="onBrandDeSelectAll($event)"
+          >
+          </ng-multiselect-dropdown>
+        </div>
+    </div>
+    <div class="product-list-container">
+        <ng-container *ngIf="!products || products.length <= 0">
+          <div class="empty-container">
+            <div>
+                <img class="success-state-img" src="../../../../../assets/images/emptystage.svg" alt="home">
+            </div>
+            <div class="text-header">
+                No Products Found
+            </div>
+            
+          </div>
+        </ng-container>
+        <ng-container *ngIf="products.length > 0">
+          <h4 class="oem-tilte">Microsoft Products</h4>
+          <div  *ngIf="products.length > 0">
+          <app-product [products]="products"></app-product>
+        </div>
+        </ng-container>
+        
+    </div>
+</div>

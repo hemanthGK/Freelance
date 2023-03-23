@@ -1,0 +1,25 @@
+
+.global-search-container{
+    background-image: url('../../../../assets/images/searchBackground.jpg');
+    background-repeat: repeat-y;
+    height: 322px;
+    width: 100%;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header{
+    color: var(--white);
+    padding-bottom: 20px;
+    font-family: 'Merriweather';
+    font-size: 2.4em;
+    /* margin-top: 10%; */
+}
+
+.search-box-container {
+    width: 50%;
+}

@@ -1,0 +1,69 @@
+<div class="cart-view-container">
+    <div class="text-header">
+        Cart
+    </div>
+
+    <!-- If Cart is Empty -->
+
+    <!-- If Cart items is present -->
+    
+      <ng-container>
+        <div>
+            <table class="table table-borderless">
+                <thead class="table-header">
+                  <tr>
+                    <th scope="col">PRODUCTS</th>
+                    <th scope="col">QUANTITY OF LISCENCE </th>
+                    <th scope="col">ACTION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <ng-container *ngFor="let item of (cartItems$ | async); index as i">
+                    <tr>
+                      <th scope="row">{{item.productName}}</th>
+                      <!-- Item Quantity -->
+                      <td>
+                        <div class="td-column">
+                          <span (click) = "quantityEdit(i,  'minus')">
+                            <img src="../../../assets/icons/Minus.svg">
+                          </span>
+                          <span>
+                            <input 
+                              class="input-field" [(ngModel)]="item.quantity" value="{{item.quantity}}"
+                              >
+                          </span>
+                          <span (click) = "quantityEdit(i , 'plus')">
+                            <img src="../../../assets/icons/Add.svg">
+                          </span>
+                        </div>
+                      </td>
+
+                      <!-- Action -->
+                      <td>
+                        <div class="td-column delete-button" (click)="removeCartItem(i)">
+                          <span>
+                            <img src="../../../assets/icons/Delete.svg">
+                          </span>
+                          <span class="delete-text" >
+                            Remove
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                  </ng-container>
+                  
+                 
+                </tbody>
+              </table>
+        </div>
+        <div class="submit-quote">
+          <span class="text-style">
+            Enter the quantity of licenses required before proceeding to submit request
+          </span>
+          <span>
+            <button class="btn compare-btn" (click)="saveCart()">Save Cart</button>
+            <button class="btn request-btn" (click)="requestQuote()">Request quote</button>
+          </span>
+        </div>
+    </ng-container>
+</div>

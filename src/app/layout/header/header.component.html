@@ -1,0 +1,26 @@
+<mat-toolbar class="toolbar">
+  <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button> -->
+  <span class="altsys-logo" (click)="goToHomePage()"> 
+    <img
+    src="../../../assets/images/altsys_logo_dark.png" 
+    />
+  </span>
+  <span class="spacer"></span>
+  <button mat-icon-button class="toolbar-icon" (click)="cartFynction()">
+    <img src="../../../assets/icons/Cart.svg"/>
+  </button>
+  <button mat-icon-button class="toolbar-icon">
+    <img src="../../../assets/icons/Bell.svg"/>
+  </button>
+  <button *ngIf="!userLoggedIn"  mat-icon-button class="toolbar-icon" (click)="login()">
+    <img src="../../../assets/icons/User_icon.svg"/>
+  </button>
+  <!-- <button *ngIf= "userLoggedIn" mat-icon-button class="toolbar-icon" (click)="logout()">
+    <img src="../../../assets/icons/Users.svg"/>
+  </button> -->
+  
+  
+  
+</mat-toolbar>

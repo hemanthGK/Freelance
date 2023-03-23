@@ -1,0 +1,45 @@
+/* Global Style Decalarations */
+
+/* Global Colors Declaration */
+
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "../node_modules/font-awesome/css/font-awesome.css";
+
+:root {
+    --neutral: #0B0B0B;
+    --primary: #F2F2F2;
+    --white : #FFFFFF;
+    --light_border : #EFEFEF;
+    --secondary : #EBECF6;
+    
+    --text-white : #E6E6E8;
+    
+    --text-grey : #CDCDD2;
+    --text-dark : #1D1F34;
+    --brown : #BA6064;
+    --red : #B82727;
+
+    --dark-blue : #161844;
+  }
+
+
+
+body{
+  margin: 0px !important;
+}
+
+
+/** Custom Class for Text  **/
+.text-header{
+  font-family: 'Merriweather';
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.text-normal {
+  font-family: 'Merriweather';
+  font-size: 14px;
+  font-weight: 600;
+}

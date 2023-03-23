@@ -1,0 +1,38 @@
+<!-- Search Box -->
+<ng-container>
+
+    <div class="form-group search-box">
+        <span class="fa fa-search search-icon"></span>
+        <input type="text" 
+            class="form-control" 
+            placeholder="Search by products, categories, brands & more"
+            (click) = "onSearchClicked()"
+            
+            (focusout)="onFocusOutEvent($event)"
+            
+            (input)="onSearchQueryInput($event)"
+            >
+            <!-- (focusout)="onFocusOutEvent($event)" -->
+    </div>
+    <ng-container *ngIf="isOpen">
+        <div class="search-result-container p-1">
+            <div class="search-component-holder p-1">
+
+                <ng-container *ngIf="generalSearchOpen">
+                    <popular-category></popular-category>
+                    <trending-products></trending-products>
+                    <recently-searched></recently-searched>
+                </ng-container>
+                <ng-container *ngIf="keywordSearchOpen">
+                    <search-list [searchResults] = "searchResults"></search-list>
+                </ng-container>
+                
+            </div>
+            
+            
+        </div>
+    </ng-container>
+
+
+
+</ng-container>

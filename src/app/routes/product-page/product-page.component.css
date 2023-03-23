@@ -1,0 +1,49 @@
+.product-page-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.product-list-container {
+    width: 73vw;
+}
+
+.filter-container {
+    width:26vw;
+    height: auto;
+    margin:2%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    padding:2% 2% 2% 0;
+    background: #FAFAFA;
+    border-radius: 12px;
+}
+
+app-product {
+    margin:2%;
+}
+
+.oem-tilte {
+    margin:2rem auto auto 1rem;
+}
+
+.drop-down-container {
+    margin:6% 4%;
+    background: #FFFFFF;
+    padding: 0 !important;
+}
+.filter-title {
+    margin:4%;
+}
+
+.empty-container {
+    min-height: 40em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    padding: 40px;
+    background: var(--primary);
+    align-items: center;
+    justify-content: center;
+   
+}
+

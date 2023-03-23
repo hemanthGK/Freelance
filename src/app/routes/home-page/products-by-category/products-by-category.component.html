@@ -1,0 +1,18 @@
+<div class="container">
+    <div>
+        <span class="text-header alignLeft">Products by Category</span>
+        <span class="text-normal brown-color alignRight">
+            See All
+            <img src="../../../../assets/icons/arrow-right-1.svg">
+        </span>
+    </div>
+
+    <div class="card-container">
+
+        <ng-container *ngIf="categories.length > 0" >
+            <ng-container *ngFor="let category of categories">
+                <card-item [imageSrc]="category.imageURL" [name]="category.name" (click)="goToProductsPageWithCategorySelection(category)"></card-item>
+            </ng-container>
+        </ng-container>
+    </div>
+</div>
