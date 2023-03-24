@@ -1,22 +1,19 @@
 /* Angular Imports */
-import { NgModule }                       from '@angular/core';
-import { CommonModule }                   from '@angular/common';
-import { RouterModule }                   from '@angular/router';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { MaterialModule } from '../material.module';
 import { SharedModule } from 'src/shared/shared.module';
 
-
-
 /* Feature Imports */
-
 
 /* Feature Imports */
 import {
   InterfaceRoutingModule,
   ROUTED_COMPONENTS
-}                                         from './interface-routing.module';
+} from './interface-routing.module';
 
-import { LayoutModule  } from '../layout/layout.module';
+import { LayoutModule } from '../layout/layout.module';
 
 /**
  * All entry level dependencies must be declared at this level

@@ -1,0 +1,291 @@
+.group-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #080f24;
+    backdrop-filter: blur(240px);
+    width: 47.38rem;
+    height: 48rem;
+  }
+  .altsys-logo-darkbg-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4.11rem;
+    height: 3.5rem;
+    object-fit: cover;
+  }
+  .altsys-logo-darkbg-wrapper {
+    position: absolute;
+    top: 3.75rem;
+    left: 3.75rem;
+    width: 4.11rem;
+    height: 3.5rem;
+  }
+  .group-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 47.38rem;
+    height: 48rem;
+  }
+  .welcome-to-altsys {
+    position: absolute;
+    top: 0;
+    left: 1.06rem;
+    line-height: 3rem;
+    display: inline-block;
+    width: 28rem;
+  }
+  .a-complete-business {
+    position: absolute;
+    top: 3.75rem;
+    left: 0;
+    font-size: var(--sub-heading-regular-size);
+    line-height: 1.88rem;
+    font-family: var(--paragraph-03-regular);
+    color: var(--text-60);
+    display: inline-block;
+    width: 30.13rem;
+  }
+  .group-frame,
+  .welcome-to-altsys-parent {
+    position: absolute;
+    left: 0;
+    width: 30.13rem;
+    height: 9.38rem;
+  }
+  .welcome-to-altsys-parent {
+    top: 0;
+  }
+  .group-frame {
+    top: 24.13rem;
+  }
+  .artboard-40-1 {
+    position: absolute;
+    top: 0;
+    left: 5rem;
+    width: 20.13rem;
+    height: 20.13rem;
+    overflow: hidden;
+  }
+  .group-container,
+  .group-div {
+    position: absolute;
+    width: 30.13rem;
+    height: 33.5rem;
+  }
+  .group-div {
+    top: 0;
+    left: 0;
+  }
+  .group-container {
+    top: 9.5rem;
+    left: 8.63rem;
+  }
+  .group-parent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 47.38rem;
+    height: 48rem;
+    font-size: var(--font-size-13xl);
+    font-family: var(--font-merriweather);
+  }
+  .sign-up-to {
+    margin: 0;
+  }
+  .sign-up-to-container {
+    position: absolute;
+    top: 5rem;
+    left: 52.38rem;
+    font-size: var(--font-size-13xl);
+    line-height: 3rem;
+    display: inline-block;
+    font-family: var(--font-merriweather);
+    color: var(--text-900);
+    width: 28rem;
+  }
+  .already-have-an {
+    line-height: 1.31rem;
+  }
+  .span {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    font-family: var(--paragraph-03-regular);
+  }
+  .sign-in {
+    line-height: 1.31rem;
+    color: #383da9;
+  }
+  .already-have-an-container {
+    position: absolute;
+    top: 35.56rem;
+    left: 56.13rem;
+    display: inline-block;
+    width: 20.5rem;
+    color: var(--text-300);
+  }
+  .cta-button {
+    position: relative;
+    line-height: 1.31rem;
+  }
+  .cta,
+  .group-item {
+    position: absolute;
+    width: 20.5rem;
+  }
+  .cta {
+    top: 20.44rem;
+    left: 56.13rem;
+    border-radius: var(--br-5xs);
+    background: linear-gradient(90deg, #d59da0, #f8cac9);
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 1.75rem;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+  .group-item {
+    top: 0.94rem;
+    left: 0;
+    height: 0;
+  }
+  .or-sign-up-via-wrapper {
+    position: absolute;
+    top: 0;
+    left: 7.31rem;
+    background-color: var(--background-white);
+    display: flex;
+    flex-direction: row;
+    padding: 0.25rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .inner,
+  .line-parent {
+    position: absolute;
+    width: 20.5rem;
+    height: 1.81rem;
+  }
+  .line-parent {
+    top: 0;
+    left: 0;
+  }
+  .inner {
+    top: 24.44rem;
+    left: 56.13rem;
+    text-align: left;
+    color: var(--text-100);
+  }
+  .group-inner {
+    position: absolute;
+    top: 0;
+    left: 1.13rem;
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+  .google {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    line-height: 1.31rem;
+    display: inline-block;
+    width: 5.5rem;
+  }
+  .microsoft-icon {
+    position: absolute;
+    top: 0.88rem;
+    left: 2.06rem;
+    width: 1.44rem;
+    height: 1.44rem;
+    overflow: hidden;
+  }
+  .ellipse-parent {
+    top: 0;
+    left: 0;
+    width: 5.5rem;
+  }
+  .ellipse-parent,
+  .group-parent1,
+  .group-wrapper1 {
+    position: absolute;
+    height: 5.31rem;
+  }
+  .group-wrapper1 {
+    top: 0;
+    left: 7.5rem;
+    width: 5.5rem;
+  }
+  .group-parent1 {
+    top: 27.75rem;
+    left: 59.88rem;
+    width: 13rem;
+    color: var(--text-300);
+  }
+  .mouse-icon {
+    position: absolute;
+    top: 17rem;
+    left: 72.88rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    overflow: hidden;
+  }
+  .title {
+    top: -62.5%;
+    line-height: 1.31rem;
+  }
+  .error,
+  .ex-wrapper,
+  .title {
+    position: absolute;
+    left: 0;
+  }
+  .error {
+    top: 110%;
+    font-size: var(--caption-regular-size);
+    line-height: 1.13rem;
+    color: var(--error-500main);
+    display: none;
+  }
+  .ex-wrapper {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: var(--br-5xs);
+    border: 1px solid var(--neutral-500);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-3xs) 8.75rem var(--padding-3xs) 0.75rem;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--text-80);
+  }
+  .input-fields {
+    position: absolute;
+    top: 15.06rem;
+    left: 56.13rem;
+    width: 20.5rem;
+    height: 2.5rem;
+    text-align: left;
+    color: var(--text-500);
+  }
+  .div {
+    position: relative;
+    background-color: var(--background-white);
+    width: 100%;
+    height: 48rem;
+    cursor: pointer;
+    text-align: center;
+    font-size: var(--paragraph-03-regular-size);
+    color: var(--background-white);
+    font-family: var(--paragraph-03-regular);
+  }
+           

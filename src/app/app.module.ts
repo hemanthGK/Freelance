@@ -73,7 +73,7 @@ export function MSALGuardConfigFactory(): MsalGuardConfiguration {
     HttpClientModule,
     SharedModule,
     NgMultiSelectDropDownModule,
-    MsalModule,
+    // MsalModule,
     NgxSpinnerModule,
     
   ],

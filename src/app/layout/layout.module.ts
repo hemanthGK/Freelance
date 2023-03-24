@@ -11,8 +11,6 @@ import { MaterialModule }                   from '../material.module';
  */
 
 import { HeaderComponent } from './header/header.component';
-
-
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatToolbar } from '@angular/material/toolbar';
 import { ToolbarComponent } from './toolbar/toolbar.component';
@@ -26,8 +24,6 @@ import { UserPanelComponent } from './user-panel/user-panel.component';
     CommonModule,
     RouterModule,
     MaterialModule
-    
-
   ],
 
   declarations: [
@@ -48,8 +44,6 @@ import { UserPanelComponent } from './user-panel/user-panel.component';
   exports: [
     RouterModule,
     MaterialModule,
-
-
     HeaderComponent,
     ToolbarComponent,
     FooterComponent,

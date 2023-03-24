@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MsalGuard, MsalRedirectComponent } from '@azure/msal-angular';
 
 import { InterfaceModule  } from './interface/interface.module';
+import { LoginPageComponent } from './routes/login-page/login-page.component';
 
 /**
  * Changed loading strategy from Lazy to Eager
@@ -17,10 +18,16 @@ const appRoutes : Routes = [
     redirectTo: 'login'
   },
 
+  // {
+  //   // Needed for handling redirect after login
+  //   path: 'auth',
+  //   component: MsalRedirectComponent
+  // },
+
   {
     // Needed for handling redirect after login
-    path: 'auth',
-    component: MsalRedirectComponent
+    path: 'login',
+    component: LoginPageComponent
   },
 
   /**
