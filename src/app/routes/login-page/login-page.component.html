@@ -1,68 +1,34 @@
-<div class="div" id="container">
-    <div class="group-parent">
-        <div class="group-wrapper">
-            <div class="group-wrapper">
-                <div class="group-child"></div>
-                <div class="altsys-logo-darkbg-wrapper">
-                    <img class="altsys-logo-darkbg-icon" alt="" src="./public/altsys-logodarkbg@2x.png" />
-                </div>
-            </div>
-        </div>
-        <img class="group-wrapper" alt="" src="./public/mask-group.svg" />
-        <div class="group-container">
-            <div class="group-div">
-                <div class="group-frame">
-                    <div class="welcome-to-altsys-parent">
-                        <b class="welcome-to-altsys">Welcome to Altsys!</b>
-                        <div class="a-complete-business">
-                            A complete business solution that enables your firm to do
-                            business with us easily as well as adapt to security best
-                            practices.
-                        </div>
-                    </div>
-                </div>
-                <img class="artboard-40-1" alt="" src="./public/artboard-40-1.svg" />
-            </div>
+
+
+<div class="split left">
+    <div class="centered">
+        <p>Welcome to Altsys!</p>
+        <p>
+          A complete business solution that enables your firm to do
+          business with us easily as well as adapt to security best
+          practices.
+        </p>
+    </div>
+  </div>
+  
+  <div class="split right">
+    <div class="centered">
+        <div class="container">
+            <p class="sign-up-to">Sign up to begin platform assessment!</p>
+            <form [formGroup]="login" (ngSubmit)="submit()" autocomplete="off">
+                <p>
+                    <mat-form-field>
+                        <mat-label> Company Email ID </mat-label>
+                        <input matInput type="text" formControlName="username" placeholder="Ex.: suryakumar@mail.com">
+                        <mat-error *ngIf="login.get('username').errors && login.get('username').errors.email"> Invalid E-Mail
+                            Pattern</mat-error>
+                    </mat-form-field>
+                </p>
+                <div class="cta"><button mat-button type="submit" [disabled]="!login.valid">Continue</button></div>
+            </form>
         </div>
     </div>
-    <b class="sign-up-to-container">
-        <p class="sign-up-to">Sign up to begin</p>
-        <p class="sign-up-to">platform assessment!</p>
-    </b>
-    <div class="already-have-an-container">
-        <span><span class="already-have-an">Already have an account?</span><span class="span"> </span></span><b
-            class="sign-in">Sign In</b>
-    </div>
-    <div class="cta"><b class="cta-button">Continue</b></div>
-    <div class="inner">
-        <div class="line-parent">
-            <div class="group-item"></div>
-            <div class="or-sign-up-via-wrapper">
-                <div class="cta-button">Or sign up via</div>
-            </div>
-        </div>
-    </div>
-    <div class="group-parent1">
-        <div class="ellipse-parent">
-            <img class="group-inner" alt="" src="./public/group-1000004253.svg" />
-            <div class="google">Google</div>
-        </div>
-        <div class="group-wrapper1">
-            <div class="ellipse-parent">
-                <div class="ellipse-parent">
-                    <img class="group-inner" alt="" src="./public/ellipse-38.svg" /><img class="microsoft-icon" alt=""
-                        src="./public/microsoft.svg" />
-                    <div class="google">Microsoft</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <img class="mouse-icon" alt="" src="./public/mouse.svg" />
-    <div class="input-fields">
-        <div class="title">Company Email ID</div>
-        <div class="error">Error</div>
-        <div class="ex-wrapper">
-            <div class="cta-button">Ex.: suryakumar@mail.com</div>
-        </div>
-    </div>
-</div>
+  </div>
+
+ 
+  
