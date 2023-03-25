@@ -1,34 +1,52 @@
 
 
 <div class="split left">
-    <div class="centered">
-        <p>Welcome to Altsys!</p>
-        <p>
-          A complete business solution that enables your firm to do
-          business with us easily as well as adapt to security best
-          practices.
-        </p>
-    </div>
-  </div>
-  
-  <div class="split right">
-    <div class="centered">
-        <div class="container">
-            <p class="sign-up-to">Sign up to begin platform assessment!</p>
-            <form [formGroup]="login" (ngSubmit)="submit()" autocomplete="off">
-                <p>
-                    <mat-form-field>
-                        <mat-label> Company Email ID </mat-label>
-                        <input matInput type="text" formControlName="username" placeholder="Ex.: suryakumar@mail.com">
-                        <mat-error *ngIf="login.get('username').errors && login.get('username').errors.email"> Invalid E-Mail
-                            Pattern</mat-error>
-                    </mat-form-field>
-                </p>
-                <div class="cta"><button mat-button type="submit" [disabled]="!login.valid">Continue</button></div>
-            </form>
+    <img class="logo" src="../../../assets/icons/svg/logo.svg" alt="">
+      <div class="centered">
+        <span class="circle-bg1"></span>
+        <span class="circle-bg2"></span>
+        <div class="centered-inner">
+          <img class="left-img" src="../../../assets/icons/login-left.png" alt="">
+            <h2>Welcome to Altsys!</h2>
+            <p class="left-desc">
+              A complete business solution that enables your firm to do
+              business with us easily as well as adapt to security best
+              practices.
+            </p>
         </div>
+      </div>
     </div>
-  </div>
-
- 
+  
+    <div class="split right">
+      <div class="">
+          <div class="container">
+              <h1 class="sign-up-to">Sign up to begin platform assessment!</h1>
+              <form [formGroup]="login" (ngSubmit)="submit()" autocomplete="off">
+                  <div class="form-group">
+                    <span class="label">Company Email ID</span>
+                      <mat-form-field appearance="outline">
+                          <input matInput type="text" formControlName="username">
+                          <mat-error *ngIf="login.get('username').errors && login.get('username').errors.email"> Invalid E-Mail
+                              Pattern</mat-error>
+                      </mat-form-field>
+                    </div>
+                  <div class="cta"><button mat-button type="submit" [disabled]="!login.valid">Continue</button></div>
+              </form>
+              <span class="or"><span class="or-text">Or sign up via</span> <span class="line"></span></span>
+              <div class="goo-mic">
+                <div class="goo">
+                  <img class="social" src="../../../assets/icons/svg/Google.svg" alt="">
+                  <span class="social-text">Google</span>
+                </div>
+                <div class="goo">
+                  <img class="social" src="../../../assets/icons/svg/Microsoft.svg" alt="">
+                  <span class="social-text">Microsoft</span>
+                </div>
+              </div>
+              <p class="already">Already have an account? <a href="">Sign In</a></p>
+          </div>
+      </div>
+    </div>
+  
+  
   

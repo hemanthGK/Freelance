@@ -6,20 +6,22 @@
     z-index: 1;
     top: 0;
     overflow-x: hidden;
-    padding-top: 20px;
+    padding: 80px;
+    overflow: hidden;
   }
-  
+
   /* Control the left side */
   .left {
     left: 0;
     background-color: #080e24;
   }
-  
+
   /* Control the right side */
   .right {
     right: 0;
+    background: white;
   }
-  
+
   .cta {
     top: 20.44rem;
     left: 56.13rem;
@@ -38,3 +40,133 @@
     position: relative;
     line-height: 1.31rem;
   }
+  :host {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 40px;
+  }
+.label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  display: block;
+  text-align: left;
+  margin-bottom: 4px;
+}
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+form {
+  text-align: center;
+  max-width: 380px;
+  margin: 0 auto;
+}
+.cta button{
+  color: #fff !important;
+  border-radius: 8px;
+}
+.or {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  position: relative;
+  display: block;
+  max-width: 380px;
+  margin: 28px auto;
+}
+.line {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 1px;
+  display: block;
+  background: linear-gradient(90deg, rgba(138, 138, 138, 0) 0%, rgba(138, 138, 138, 0.25) 52.95%, rgba(138, 138, 138, 0) 100%);
+}
+.or-text {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  padding: 0 8px;
+}
+.social {
+  width: 52px;
+  height: 52px;
+  background: #FAFAFA;
+  border-radius: 50%;
+  padding: 15px;
+}
+.goo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.already {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+.goo-mic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 200px;
+  margin: 0 auto 40px;
+}
+.social-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 12px;
+}
+.centered {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.left-img {
+  margin-bottom: 50px;
+}
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+}
+p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+}
+.circle-bg1, .circle-bg2 {
+  position: absolute;
+  width: 188.55px;
+  height: 272.71px;
+  left: -38px;
+  top: 534.99px;
+  background: #0071F5;
+  opacity: 0.4;
+  filter: blur(150px);
+  transform: rotate(-10.69deg);
+}
+.circle-bg2 {
+  bottom: inherit;
+  top: -38px;
+  left: inherit;
+  right: -38px;
+}
+.logo {
+  position: absolute;
+  left: 60px;
+  top: 60px;
+  z-index: 5;
+}

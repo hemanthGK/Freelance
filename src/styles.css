@@ -5,16 +5,16 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import "../node_modules/font-awesome/css/font-awesome.css";
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
 :root {
     --neutral: #0B0B0B;
     --primary: #F2F2F2;
     --white : #FFFFFF;
     --light_border : #EFEFEF;
     --secondary : #EBECF6;
-    
+
     --text-white : #E6E6E8;
-    
+
     --text-grey : #CDCDD2;
     --text-dark : #1D1F34;
     --brown : #BA6064;
@@ -43,4 +43,12 @@ body{
   font-family: 'Merriweather';
   font-size: 14px;
   font-weight: 600;
+}
+.mat-mdc-text-field-wrapper {
+  height: 40px !important;
+}
+.mat-mdc-form-field-infix {
+  height: 40px !important;
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
 }
